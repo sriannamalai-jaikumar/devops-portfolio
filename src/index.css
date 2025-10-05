@@ -1,0 +1,57 @@
+/* index.css */
+
+/* 1. Reset + Defaults */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #ffffff;
+  color: #1a1a1a;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* 2. Animated Gradient Background for Hero */
+.animated-bg {
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.animated-bg::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(120deg,
+    rgba(59, 130, 246, 0.1),
+    rgba(139, 92, 246, 0.1),
+    rgba(6, 182, 212, 0.1));
+  animation: flow 20s ease-in-out infinite;
+  z-index: -1;
+  transform: rotate(0deg);
+}
+
+@keyframes flow {
+  0%, 100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  50% {
+    transform: translate(10%, 10%) rotate(180deg);
+  }
+}
+
+/* Optional: Dark mode setup if needed later */
+html.dark body {
+  background-color: #0d1117;
+  color: #e6edf3;
+}

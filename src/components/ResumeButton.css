@@ -1,0 +1,21 @@
+.resume-button-container {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.resume-button {
+  background-color: var(--accent-color);
+  color: white;
+  font-weight: 700;
+  padding: 0.75rem 1.5rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  box-shadow: 0 4px 12px rgba(33, 161, 241, 0.5);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.resume-button:hover {
+  background-color: #1a92d5;
+  box-shadow: 0 6px 16px rgba(33, 161, 241, 0.8);
+}
