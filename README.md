@@ -2,7 +2,7 @@
 
 Welcome to the repository for my personal DevOps portfolio website. This site is built with React and serves as a central hub to showcase my skills, projects, and experience in the world of DevOps.
 
-Visit the live site here: **[Your-Live-Portfolio-URL.com]** (<- Add your deployment link!)
+Visit the live site here: **[https://sriannamalai-jaikumar.github.io/devops-portfolio/]** (<- Add your deployment link!)
 
 ## 🚀 About This Project
 
