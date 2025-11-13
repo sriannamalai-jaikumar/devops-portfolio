@@ -1,16 +1,16 @@
 // src/App.js
 
 import React, { useEffect } from 'react';
+import { BrowserRouter } from 'react-router-dom';
+
 import Hero from './components/Hero';
 import About from './components/About';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
-//import Certifications from './components/Certifications';
+// import Certifications from './components/Certifications';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import ThemeToggle from './components/ThemeToggle';
-
-// Import the new component
 import ProfessionalExperience from './components/ProfessionalExperience';
 
 import AOS from 'aos';
@@ -24,7 +24,7 @@ function App() {
   }, []);
 
   return (
-    <>
+    <BrowserRouter> {/* basename removed */}
       <ThemeToggle />
 
       <div className="container">
@@ -44,13 +44,13 @@ function App() {
           <Projects />
         </section>
 
-        {/*
+        {/* 
         <section id="certifications" style={{ margin: '80px 0' }}>
           <Certifications />
         </section>
         */}
 
-          <section id="experience" style={{ margin: '80px 0' }}>
+        <section id="experience" style={{ margin: '80px 0' }}>
           <ProfessionalExperience />
         </section>
 
@@ -60,7 +60,7 @@ function App() {
       </div>
 
       <Footer />
-    </>
+    </BrowserRouter>
   );
 }
 
