@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+
+metadata:
+  name: devops-portfolio-pod
+  labels:
+    project: portfolio
+
+spec:
+  containers:
+    - name: devops-portfolio
+      image: sriannamalai/devops-portfolio:latest
+      ports:
+        - containerPort: 5000
